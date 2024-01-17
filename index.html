@@ -7,6 +7,7 @@
        <meta name="keywords" content="codersclub, coders, htmlcourse, csscourse, mern">
      <meta name="robots" content="index, follow">
        <title>Coders site</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -24,8 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:ital,wght@0,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@500&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet/less" type="text/css" href="style.scss" />
     <link rel="stylesheet" href="style.css" />
+             <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="section_navbar">
@@ -71,7 +72,7 @@
             </div>
           </div>
 
-          <div class="section_hero_image">
+          <div class="section_hero_image" data-aos="fade-up">
             <figure>
               <img src="./images/hero_image.png" alt="hero image" />
             </figure>
@@ -111,7 +112,7 @@
         </p>
       </div>
       <div class="grid container grid_three_cols">
-        <div class="about_div">
+        <div class="about_div" data-aos="fade-up">
           <div class="icon">
             <img
               src="./images/research_icon.jpg"
@@ -126,7 +127,7 @@
             is in demand in very friendly way to explain
           </p>
         </div>
-        <div class="about_div">
+        <div class="about_div" data-aos="fade-up">
           <div class="icon">
             <img
               src="./images/gallary_icon.jpg"
@@ -140,7 +141,7 @@
             can improve your designing skills and become more creative
           </p>
         </div>
-        <div class="about_div">
+        <div class="about_div" data-aos="fade-up">
           <div class="icon">
             <img
               src="./images/dev_icon.avif"
@@ -155,7 +156,7 @@
             work well and make you happy.
           </p>
         </div>
-      </div>
+      </div> data-aos="fade-down"
     </section>
 
     <section class="course_section">
@@ -166,7 +167,7 @@
         </p>
       </div>
       <div class="grid container grid_four_cols">
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
             <i class="fa-brands fa-js"></i>
           </div>
@@ -175,37 +176,37 @@
             Creating dynamic, interactive web applications for user engagement.
           </p>
         </div>
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
             <i class="fa-brands fa-java"></i>
           </div>
           <h2 class="section_common_title">Java Developer</h2>
           <p>Cross-platform application development with Java programming.</p>
         </div>
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
             <i class="fa-solid fa-terminal"></i>
           </div>
           <h2 class="section_common_title">c++ Developer</h2>
           <p>Powerful, efficient coding language for software development.</p>
         </div>
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
-            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-python" ></i>
           </div>
           <h2 class="section_common_title">Python Developer</h2>
           <p>
             Versatile language for problem-solving and application development.
           </p>
         </div>
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
             <i class="fa-brands fa-html5"></i>
           </div>
           <h2 class="section_common_title">HTML Developer</h2>
           <p>Web content structure with essential markup language.</p>
         </div>
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
             <i class="fa-solid fa-database"></i>
           </div>
@@ -214,7 +215,7 @@
             Effective data management and retrieval using SQL database language.
           </p>
         </div>
-        <div class="course_div">
+        <div class="course_div" data-aos="fade-down">
           <div class="icon">
             <i class="fa-brands fa-css3-alt"></i>
           </div>
@@ -267,7 +268,7 @@
        <!-- center part -->
         <div class="choose_center_div">
           <figure>
-            <img src="./images/figma_image.png" alt="application_img" />
+            <img data-aos="fade-down" src="./images/figma_image.png" alt="application_img" />
           </figure>
         </div>
         <!-- right part -->
@@ -300,7 +301,7 @@
         </div>
     </section>
     <!-- contact -->
-    <div class="contact_section_homepage" id="contact_section_homepage">
+    <div class="contact_section_homepage" data-aos="fade-down" id="contact_section_homepage">
         <div class="grid container grid_two_cols">
         <div class="contact_content">
           <h2 class="contact_title">Let's make your coding journey awesome</h2>
@@ -368,6 +369,11 @@
        
       </div>
   </div>
-</footer>
+</footer>   
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
